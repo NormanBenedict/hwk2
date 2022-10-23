@@ -1,0 +1,30 @@
+<html>
+    <head>
+      <style>
+        table, th, td {
+          border: 1px solid black;
+          border-collapse: collapse;
+        }
+        th, td {
+          padding: 5px;
+        }
+        th {
+          text-align: left;
+        }
+        </style>
+        <title>City population app</title>
+    </head>
+
+    <body>
+        <h1 style=color:red>Car Database </h1>
+        <hr>
+        <div>
+          <a href="/view_all">View All</a>
+          <a href="/search_by_model">Search by Model</a>
+          <a href="/add">Add Car</a>
+          <a href="/sort_model">Sort by Model</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
